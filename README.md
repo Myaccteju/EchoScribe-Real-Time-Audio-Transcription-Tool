@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# "EchoScribe: Real-Time Audio Transcription Tool"  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **"EchoScribe: Real-Time Audio Transcription Tool"** built with React.js. It allows users to record audio, transcribe it live using the **Deepgram Speech-to-Text API**, and save transcriptions for later reference. The sleek and interactive UI provides an effortless experience with custom player controls, animated audio waves, and a transcript history section.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features  
 
-### `npm start`
+- 🎤 **Live Audio Transcription**: Records audio in real-time and processes it using the Deepgram API.  
+- 💾 **Save Transcriptions**: Save your transcriptions for future reference.  
+- 🖥️ **Interactive UI**:  
+  - Modern audio player with **play** and **pause** buttons.  
+  - Animated waves while recording to indicate active listening.  
+- 📝 **Transcription History**: Displays a list of all saved transcriptions.  
+- 💡 **Environment Configurations**: Uses `.env` file for API key storage for secure integrations.
+- 📝 Infinite Scrolling Transcript:
+The transcription area supports infinite scrolling, ensuring that new transcriptions automatically appear without disrupting the scroll position.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation  
 
-### `npm test`
+### Prerequisites  
+- Node.js (v14 or higher)  
+- NPM or Yarn package manager  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps to Run the Project  
 
-### `npm run build`
+1. **Clone the Repository**  
+   ```bash
+   https://github.com/Myaccteju/EchoScribe-Real-Time-Audio-Transcription-Tool.git
+   cd EchoScribe-Real-Time-Audio-Transcription-Tool
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies**
+    npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Setup Environment Variables**
+    Setup Environment Variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Create a .env file in the root directory.
+    Add the following line with your Deepgram API key
+    REACT_APP_DG_KEY=your_deepgram_api_key
 
-### `npm run eject`
+4. **Start the Development Server**
+    npm start
+    The app will run on http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Usage**
+    1. Click the Play button to start recording and transcription.
+    2. View live transcription updates in the Transcription Section.
+    3. Click the Pause button to stop recording.
+    4. Use the Save Transcription button to store the transcription in the History Section.   
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**File Structure**
+    1. src/App.js:
+        Core logic for audio recording, WebSocket communication with Deepgram, and managing transcriptions.
+    2. src/Player.jsx:
+        Custom audio player component with interactive play/pause functionality and animated waves.
+    3. src/Player.css:
+        Styles for the audio player, transcription UI, and buttons.
+    4. .env:
+        Stores the Deepgram API key for secure API calls.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Technologies Used**
+    1. React.js: For building the user interface.
+    2. Deepgram API: For speech-to-text transcription.
+    3. CSS3: For styling and animations.
+    4. WebSockets: For real-time audio processing.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# EchoScribe-Real-Time-Audio-Transcription-Tool
